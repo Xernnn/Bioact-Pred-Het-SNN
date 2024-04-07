@@ -1,0 +1,27 @@
+,smiles,Hepatobiliary disorders,Metabolism and nutrition disorders,Product issues,Eye disorders,Investigations,Musculoskeletal and connective tissue disorders,Gastrointestinal disorders,Social circumstances,Immune system disorders,Reproductive system and breast disorders,"Neoplasms benign, malignant and unspecified (incl cysts and polyps)",General disorders and administration site conditions,Endocrine disorders,Surgical and medical procedures,Vascular disorders,Blood and lymphatic system disorders,Skin and subcutaneous tissue disorders,"Congenital, familial and genetic disorders",Infections and infestations,"Respiratory, thoracic and mediastinal disorders",Psychiatric disorders,Renal and urinary disorders,"Pregnancy, puerperium and perinatal conditions",Ear and labyrinth disorders,Cardiac disorders,Nervous system disorders,"Injury, poisoning and procedural complications",Drug_Name
+0,Cl.CN[C@H](CC(C)C)C(=O)N[C@@H]1[C@H](O)C2=CC=C(OC3=C(O[C@@H]4O[C@H](CO)[C@@H](O)[C@H](O)[C@H]4O[C@H]4C[C@](C)(N)[C@H](O)[C@H](C)O4)C4=CC(=C3)[C@@H](NC(=O)[C@H](CC(N)=O)NC1=O)C(=O)N[C@@H]1C3=CC(=C(O)C=C3)C3=C(O)C=C(O)C=C3[C@H](NC(=O)[C@@H](NC1=O)[C@H](O)C1=CC(Cl)=C(O4)C=C1)C(O)=O)C(Cl)=C2,,,,,,,,,,,,,,,,,,,,,,,,,,,,Vancomycin
+1,CC[C@@H]1NC(=O)[C@H]([C@H](O)[C@H](C)C\C=C\C)N(C)C(=O)[C@H](C(C)C)N(C)C(=O)[C@H](CC(C)C)N(C)C(=O)[C@H](CC(C)C)N(C)C(=O)[C@@H](C)NC(=O)[C@H](C)NC(=O)[C@H](CC(C)C)N(C)C(=O)[C@@H](NC(=O)[C@H](CC(C)C)N(C)C(=O)CN(C)C1=O)C(C)C,,,,,,,,,,,,,,,,,,,,,,,,,,,,cyclosporine
+2,Cl.CCCCCCCCC1=CC=C(CCC(N)(CO)CO)C=C1,,,,,,,,,,,,,,,,,,,,,,,,,,,,fingolimod
+3,CC(C)CC(C(=NC(CCC(=O)O)C(=NC(CCCCN)C(=NC(CCC(=O)O)C(=NC(CC(=O)O)C(=NC(CC1=CC=CC=C1)C(=NC(CC2=CC=C(C=C2)O)C(=NC(CCCNC(=N)N)C(=NCC(=NC(CCCCN)C(=O)O)O)O)O)O)O)O)O)O)O)N=C(C(CCCCN)N=C(C(CCC(=O)O)N=C(C(CCC(=O)O)N)O)O)O,,,,,,,,,,,,,,,,,,,,,,,,,,,,interferon-beta 1a
+4,CCC(CC)COC(=O)C(C)NP(=O)(OCC1C(C(C(O1)(C#N)C2=CC=C3N2N=CN=C3N)O)O)OC4=CC=CC=C4,,,,,,,,,,,,,,,,,,,,,,,,,,,,Remdesivir
+5,CCC(CC)OC1C=C(CC(C1NC(=O)C)N)C(=O)OCC,,,,,,,,,,,,,,,,,,,,,,,,,,,,Oseltamivir
+6,CC(C)C1=NC(=CS1)CN(C)C(=O)NC(C(C)C)C(=O)NC(CC2=CC=CC=C2)CC(C(CC3=CC=CC=C3)NC(=O)OCC4=CN=CS4)O,,,,,,,,,,,,,,,,,,,,,,,,,,,,Ritonavir
+7,CC(C)C(=O)OCC1C(C(C(O1)N2C=CC(=NC2=O)NO)O)O,,,,,,,,,,,,,,,,,,,,,,,,,,,,Molnupiravir
+8,CC1(C2C1C(N(C2)C(=O)C(C(C)(C)C)NC(=O)C(F)(F)F)C(=O)NC(CC3CCNC3=O)C#N)C,,,,,,,,,,,,,,,,,,,,,,,,,,,,paxlovid (Nirmatrelvir)
+9,CCC(=O)NC1CCCC2=C1C=NC=C2C3=CC4=C(C=C3)N(C(=O)CC4)C,,,,,,,,,,,,,,,,,,,,,,,,,,,,Baxdrostat
+10,C1=CC(=C(C(=C1)Cl)CC(=O)N=C(N)N)Cl,,,,,,,,,,,,,,,,,,,,,,,,,,,,Guanfacine
+11,CCCCCCCCCCCCCCCC(=O)NC(CCC(=O)NCCCCC(C(=O)NC(CCC(=O)O)C(=O)NC(CC1=CC=CC=C1)C(=O)NC(C(C)CC)C(=O)NC(C)C(=O)NC(CC2=CNC3=CC=CC=C32)C(=O)NC(CC(C)C)C(=O)NC(C(C)C)C(=O)NC(CCCNC(=N)N)C(=O)NCC(=O)NC(CCCNC(=N)N)C(=O)NCC(=O)O)NC(=O)C(C)NC(=O)C(C)NC(=O)C(CCC(=O)N)NC(=O)CNC(=O)C(CCC(=O)O)NC(=O)C(CC(C)C)NC(=O)C(CC4=CC=C(C=C4)O)NC(=O)C(CO)NC(=O)C(CO)NC(=O)C(C(C)C)NC(=O)C(CC(=O)O)NC(=O)C(CO)NC(=O)C(C(C)O)NC(=O)C(CC5=CC=CC=C5)NC(=O)C(C(C)O)NC(=O)CNC(=O)C(CCC(=O)O)NC(=O)C(C)NC(=O)C(CC6=CN=CN6)N)C(=O)O,,,,,,,,,,,,,,,,,,,,,,,,,,,,Liraglutide
+12,CC#CCN1C2=C(N=C1N3CCCC(C3)N)N(C(=O)N(C2=O)CC4=NC5=CC=CC=C5C(=N4)C)C,,,,,,,,,,,,,,,,,,,,,,,,,,,,linagliptin
+13,CCS(=O)(=O)N1CC(C1)(CC#N)N2C=C(C=N2)C3=C4C=CNC4=NC=N3.OP(=O)(O)O,,,,,,,,,,,,,,,,,,,,,,,,,,,,Baricitinib-phosphate
+14,CC1CC2C3CCC4=CC(=O)C=CC4(C3(C(CC2(C1(C(=O)COP(=O)([O-])[O-])O)C)O)F)C.[Na+].[Na+],,,,,,,,,,,,,,,,,,,,,,,,,,,,Dexamethasone-Sodium-Phosphate
+15,CCNC(=O)[C@@H]1CC[C@@H]2C@@HCC[C@@H]2C1,,,,,,,,,,,,,,,,,,,,,,,,,,,,Tocilizumab
+16,CCC(CC)COC(=O)C(C)NP(=O)(OCC1C(C(C(O1)(C#N)C2=CC=C3N2N=CN=C3N)O)O)OC4=CC=CC=C4,,,,,,,,,,,,,,,,,,,,,,,,,,,,Remdesivir (Veklury)
+17,CC(C)C@HC(=O)NCC(=O)N,,,,,,,,,,,,,,,,,,,,,,,,,,,,Anakinra
+18,CCN(CC)CCCC(C)NC1=C2C=CC(=CC2=NC=C1)Cl,,,,,,,,,,,,,,,,,,,,,,,,,,,,Chloroquine
+19,CCN(CCCC(C)NC1=C2C=CC(=CC2=NC=C1)Cl)CCO,,,,,,,,,,,,,,,,,,,,,,,,,,,,Hydroxychloroquine
+20,C1=C(N=C(S1)N=C(N)N)CSCCC(=NS(=O)(=O)N)N,,,,,,,,,,,,,,,,,,,,,,,,,,,,Famotidine
+21,CCOC(=O)C1=C(N(C2=CC(=C(C(=C21)CN(C)C)O)Br)C)CSC3=CC=CC=C3,,,,,,,,,,,,,,,,,,,,,,,,,,,,Umifenovir 
+22,CCC(C)C1C(CCC2(O1)CC3CC(O2)CC=C(C(C(C=CC=C4COC5C4(C(C=C(C5O)C)C(=O)O3)O)C)OC6CC(C(C(O6)C)OC7CC(C(C(O7)C)O)OC)OC)C)C,,,,,,,,,,,,,,,,,,,,,,,,,,,,Ivermectin-B1a
+23,CC12CC(C3C(C1CCC2(C(=O)CO)O)CCC4=CC(=O)C=CC34C)O,,,,,,,,,,,,,,,,,,,,,,,,,,,,Prednisolone
+24,COCCCCC(=NOCCN)C1=CC=C(C=C1)C(F)(F)F,,,,,,,,,,,,,,,,,,,,,,,,,,,,Fluvoxamine
+25,C1=CC(=CC=C1C(=O)OC2=CC3=C(C=C2)C=C(C=C3)C(=N)N)N=C(N)N,,,,,,,,,,,,,,,,,,,,,,,,,,,,Nafamostat
