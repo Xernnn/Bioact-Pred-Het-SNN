@@ -91,19 +91,19 @@ In Figure 1, potential drugs are chosen with the self-constructed dataset treati
 \end{figure}
 
 \subsection{Data materials}
-There are four different datasets for distinct purposes related to side effects, toxicity, and the risk of overfitting to similar compounds. Almost all datasets are used as pre-trained models for less time-consuming re-training processes, while a manual collection dataset is used for testing the model to further analyze results. Table 1 describes the ratios for training and testing equivalent to each dataset.\\
+There are four different datasets for distinct purposes related to side effects, toxicity, and the risk of overfitting to similar compounds. Almost all datasets are used as pre-trained models for less time-consuming re-training processes, while a manual collection dataset is used for testing the model to further analyze results. Table I describes the ratios for training and testing equivalent to each dataset.\\
 
 \subsubsection{A manual collection dataset}
 A manual collection dataset is constructed to evaluate the pre-trained model and analyze the further results. It contains 24 marketed drugs with the SMILES structure used to treat COVID-19. These drugs are used to evaluate the model by selecting 7 selected drugs with the 27 side effects in SIDER compared with the prediction of these 7 drugs of an SNN model. Moreover, potential side effects extracted from results can be used to propose which side effects are typical for dosage use and chemical compound recommendations. Details in Appendix 1.\\
 
 \subsubsection{SIDER}
-The SIDER is a dataset of marketed-drugs side effects. These include 27 classes using Medical Dictionary for Regulatory Activities (MedDRA) classification according to system organ classes. SIDER is a variant in, for example, Hepatobiliary disorders, Metabolism and nutrition disorders, and Product issues. Details in Table 1.\\
+The SIDER is a dataset of marketed-drugs side effects. These include 27 classes using Medical Dictionary for Regulatory Activities (MedDRA) classification according to system organ classes. SIDER is a variant in, for example, Hepatobiliary disorders, Metabolism and nutrition disorders, and Product issues. Details in Table I.\\
 
 \subsubsection{Tox21}
-Tox21 is designed to evaluate the toxicity of chemical substances. It consists of 12 toxicological assays following receptors, which forecast the potential risks linked to exposure to these compounds. Details in Table 1.\\
+Tox21 is designed to evaluate the toxicity of chemical substances. It consists of 12 toxicological assays following receptors, which forecast the potential risks linked to exposure to these compounds. Details in Table I.\\
 
 \subsubsection{MUV}
-The MUV is indicated as a benchmark for evaluating the performance of virtual screening with 17 challenging tasks and priority of the minimization of the risk of overfitting to similar compounds. Details in Table 1.
+The MUV is indicated as a benchmark for evaluating the performance of virtual screening with 17 challenging tasks and priority of the minimization of the risk of overfitting to similar compounds. Details in Table I.
 
 \begin{table}[h!]
   \centering
@@ -122,7 +122,7 @@ The MUV is indicated as a benchmark for evaluating the performance of virtual sc
 \subsection{Data representation and pre-trained BioAct-Het Model}
 As described in related work, GCN-Canonical and GCN-AttentitiveFP are used for feature extractors. Chemical compound representation steps are then gone into Bio-Prof which is based on the profile of chemical structure of related compounds. Moreover, the model called BioAct-Het (a heterogeneous SNN) plays a role in bringing the similar concept of bioactivity classes and chemical compounds in the latent space and inferring the likelihood of association through distances as embedding vectors. \\
 
-The strategies and evaluation approach in pre-trained models are according to Table 2.\\
+The strategies and evaluation approach in pre-trained models are according to Table II.\\
 
 \begin{itemize}
   \item The association-based strategy is to determine the relationship between a chemical substance in the data set and a bioactivity class (preferred to use in BioAct-Het).
@@ -131,7 +131,7 @@ The strategies and evaluation approach in pre-trained models are according to Ta
 \end{itemize}
 
 \begin{table}[h!]
-  \caption{Caption here}
+  \caption{The Strategies and Evaluation Approach in Pre-trained Models}
   \label{tab:your_label_here}
   \centering
   \begin{tabular}{|m{2.2cm}|c|c|m{2.8cm}|}
@@ -165,7 +165,7 @@ Confusion matrices and other evaluation metrics are used to assess how accurate 
 
 \begin{table}[h!]
   \centering
-  \caption{Example of a 5x2 Table}
+  \caption{Evaluation Matrix Explanation}
   \label{tab:Prediction_Definition}
   \begin{tabular}{|>{\raggedright\arraybackslash}p{2.5cm}|>{\raggedright\arraybackslash}p{6cm}|}
     \hline
@@ -181,15 +181,24 @@ Confusion matrices and other evaluation metrics are used to assess how accurate 
 
 \section{Results and Evaluation}
 \subsection{Model Evaluation}
-To evaluate the performance of the BioAct-Het model, a testing process is carried out. This involves comparing the side effects of 7 actual drugs from the SIDER dataset with those predicted for 7 drugs, among a total of 25 potentially marketed drugs that had ground truth side-effect labels. These results are presented in Table N.
-These drugs were:\\[6pt]
+To evaluate the performance of the BioAct-Het model, a testing process is carried out. This involves comparing the side effects of 7 actual drugs from the SIDER dataset with those predicted for 7 drugs, among a total of 25 potentially marketed drugs that had ground truth side-effect labels. These results are presented in Table IV.
+These drugs were:\\
 
+\begin{itemize}
+  \item \textbf{Chloroquine} 
+  \item \textbf{Famotidine} 
+  \item \textbf{Guanfacine} 
+  \item \textbf{Hydroxychloroquine}
+  \item \textbf{Oseltamivir}
+  \item \textbf{Prednisolone}
+  \item \textbf{Ritonavir}
+\end{itemize}
 
 For each drug-side effect pair in the test set, the model made a prediction between 0 and 1 for the likelihood of that side effect occurring. The threshold for classifying predictions is 0.5, which is a positive prediction for the side effects if the result is above the threshold, and below the threshold results in a negative prediction.\\
 
 We then generated bubble charts and confusion matrices to visualize how well the model's predictions matched each drug's ground truth labels. The bubble charts showed the counts of true positive, false positive, true negative, and false negative predictions for each drug. Overall, the confusion matrices indicated the model accurately predicted both the presence and absence of side effects for most drug-side effect pairs. (Appendix 2)\\
 
-To quantify the model's performance, the evaluation metrics are being used, such as accuracy, precision, recall, and F1 score calculation based on the true and false positives and negatives. The accuracy was 85.7\%, precision was 86.2\%, recall was 85.3\%, and F1 score was 85.7\%. All of these evaluation metrics were well above the 75\% threshold, demonstrating the model could reliably predict side effects in a one-shot learning scenario.
+To quantify the model's performance, we can see that in table IV, the evaluation metrics are being used, such as accuracy, precision, recall, and F1 score calculation based on the true and false positives and negatives. The accuracy was 85.7\%, precision was 86.2\%, recall was 85.3\%, and F1 score was 85.7\%. All of these evaluation metrics were well above the 75\% threshold, demonstrating the model could reliably predict side effects in a one-shot learning scenario.
 
 \begin{table}[h!]
   \centering
@@ -231,7 +240,7 @@ Ritonavir’s confusion matrix, for example, is represented in figure 2 and 3, i
   \label{fig:Ritonavir Bubble Chart}
 \end{figure}
 
-Notably, through table N, four of the drugs tested - Hydroxychloroquine, Oseltamivir , Chloroquine and Ritonavir - are currently used as COVID-19 treatments, and the model achieved especially high scores on these drugs. \textit{This suggests the model may be particularly suited for evaluating potential COVID-19 drug candidates.}\\
+Notably, through table IV, four of the drugs tested - Hydroxychloroquine, Oseltamivir , Chloroquine and Ritonavir - are currently used as COVID-19 treatments, and the model achieved especially high scores on these drugs. \textit{This suggests the model may be particularly suited for evaluating potential COVID-19 drug candidates.}\\
 
 \subsection{Drug Discovery Results Analysis}
 Next, to investigate the safest drug options, an identification process is carried out, which results in the 5 predicted drugs having the fewest side effects by the model:
@@ -292,11 +301,11 @@ The results give 5 drugs with the least side effects including Paxlovid (Nirmatr
 
 The results give 5 drugs requiring careful use Ritonavir, Umifenovir, Cyclosporine, Prednisolone and Ivermectin-B1a. Three of these, such as Ritonavir, Umifenovir and Ivermectin-B1a, are known as COVID-19 drugs; however, the dosage of these drugs should be noticed to patients through prescriptions while obligatorily taking medicine.  \\
 
-Based on the results of 25 drugs, some particular side effects consist of Immune System Disorders, Vascular Disorders, Nervous system disorders, Metabolism and Nutrition Disorders, Gastrointestinal Disorders and Musculoskeletal and Connective Tissue Disorders. Compared with 5 drugs least side effects, some particular side effects are included in table 3.\\
+Based on the results of 25 drugs, some particular side effects consist of Immune System Disorders, Vascular Disorders, Nervous system disorders, Metabolism and Nutrition Disorders, Gastrointestinal Disorders and Musculoskeletal and Connective Tissue Disorders. Compared with 5 drugs least side effects, some particular side effects are included in table V.\\
 
 \begin{table}[h!]
   \centering
-  \caption{Large 13x5 Table}
+  \caption{Common Side Effects Listing for Drug Comparison}
   \label{tab:large_table}
   \begin{tabular}{
     |c|>{\raggedright\arraybackslash}p{2.2cm}|
@@ -304,6 +313,7 @@ Based on the results of 25 drugs, some particular side effects consist of Immune
     >{\centering\arraybackslash}p{1.2cm}|
     >{\centering\arraybackslash}p{1.2cm}|}
     \hline
+    \rowcolor{headercolor}
     \textbf{No.} & \textbf{Common Side Effects of the 25 Drugs}         & \textbf{Included in Top 5 with Least Side Effects} & \textbf{Paxlovid (Nirmatrelvir)} & \textbf{Interferon-beta 1a} \\ \hline
     1            & Immune System Disorders                              & Yes                                                & Yes                              & Yes                         \\ \hline
     2            & Vascular Disorders                                   & Yes                                                & Yes                              & Yes                         \\ \hline
@@ -335,6 +345,7 @@ The data and code underlying this article are available publicly at \url{https:/
   \label{tab:Author Contributions}
   \begin{tabular}{|>{\centering\arraybackslash}m{2cm}|>{\centering\arraybackslash}m{3cm}|>{\centering\arraybackslash}m{3cm}|}
     \hline
+    \rowcolor{headercolor}
     \textbf{Name}    & \textbf{Task}                                                                    & \textbf{Responsibility}                                                       \\ \hline
     Doan Huu Thanh   & Studied and conducted COVID-19 diseases and marketed drugs with SMILES structure & Supervised by Pham Hai Nam                                                    \\ \hline
     Nguyen Son       & Developed and implemented the method                                             & Interpreted results, wrote manuscript on LaTeX platform, administered project \\ \hline
@@ -355,6 +366,7 @@ The data and code underlying this article are available publicly at \url{https:/
   \renewcommand{\arraystretch}{1.2}
   \begin{tabular}{|>{\bfseries}l|l|p{10cm}|}
     \hline
+    \rowcolor{headercolor}
     \textbf{Drug}                            & \textbf{Chemical Compound}             & \textbf{SMILES Structure}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       \\
     \hline
     Vancomycin                               & C$_{66}$H$_{75}$Cl$_2$NO$_{21}$        & Cl.CN[C@H](CC(C)C)C(=O)N[C@@H]1[C@H](O)C2=CC=C(OC3=C(O[C@@H]4O \newline [C@H](CO)[C@@H](O)[C@H](O)[C@H]4O[C@H]4C[C@](C)(N)[C@H](O)[C@H] \newline (C)O4)C4=CC(=C3)[C@@H](NC(=O)[C@H](CC(N)=O)NC1=O)C(=O)N[C@@H]1C3 \newline =CC(=C(O)C=C3)C3=C(O)C=C(O)C=C3[C@H](NC(=O)[C@@H](NC1=O)[C@H](O) \newline C1=CC(Cl)=C(O4)C=C1)C(O)=O)C(Cl)=C2                                                                                                                                                                                                                                        \\
