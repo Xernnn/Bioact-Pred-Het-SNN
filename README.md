@@ -1,6 +1,6 @@
 # Bioactivity prediction by a Heterogeneous Siamese Neural Network (SNN)
 
-# Group 2 of course Machine Learning in Medicine
+# Group 2 Machine Learning in Medicine - Year 3 Data Science
 
 - Nguyen Son (BI12-389)
 - Pham Hai Nam (BI12-307)
