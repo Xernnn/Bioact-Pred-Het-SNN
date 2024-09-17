@@ -5,7 +5,6 @@
 - Nguyen Son (BI12-389)
 - Le Mau Minh Phuc (BI12-351)
 - Doan Huu Thanh (BI12-418) 
-*University of Science and Technology of Hanoi*
 
 ## Abstract
 The determination of bioactivity during medication leads to challenges that can cause drug failure. This study presents a model, BioAct-Het, which utilizes a Siamese Neural Network (SNN) to predict bioactivity classes for both COVID-19 and non-COVID-19 drugs. The model demonstrates an accuracy greater than 75%, making it a reliable tool for evaluating side effects and enhancing drug discovery.
@@ -84,3 +83,5 @@ They can be found here for the [Bubble Charts](https://github.com/Xernnn/Bioact-
 
 ## Conclusion
 This study successfully demonstrates the application of the BioAct-Het model in predicting bioactivity classes and side effects of marketed drugs. The findings underscore the model's potential utility in drug discovery, particularly in identifying safe options for COVID-19 treatment. Further research is recommended to validate these findings through in vitro and in vivo studies.
+
+For more details, please refer to the [full report](https://github.com/Xernnn/Bioact-Pred-Het-SNN/blob/main/Report_Slide/main.pdf) or the [presentation slide](https://github.com/Xernnn/Bioact-Pred-Het-SNN/blob/main/Report_Slide/MLMed.pptx).
