@@ -56,6 +56,7 @@ The BioAct-Het model was evaluated using a test set of seven drugs, comparing th
 - Ritonavir
 
 The model achieved an overall accuracy of **87.76%**, with individual metrics as follows:
+
 ![image](https://github.com/user-attachments/assets/28a6fbd0-2649-4ec0-a715-942ead91c34e)
 
 
@@ -66,12 +67,14 @@ From the analysis, five drugs were identified with the fewest predicted side eff
 3. **Interferon-beta-1a**: 11 predicted side effects.
 4. **Famotidine**: 10 predicted side effects.
 5. **Hydroxychloroquine**: 10 predicted side effects.
+   
 ![image](https://github.com/user-attachments/assets/41ad0e7f-01a9-4ca2-95b9-a10a00baa5de)
 
 Notably, Paxlovid and Interferon-beta-1a are both relevant to COVID-19 treatment, suggesting their potential use in clinical settings. Conversely, the model also identified drugs with the highest predicted side effects, indicating the need for careful monitoring:
 - **Ritonavir**: 25 predicted side effects.
 - **Ivermectin-B1a**: 26 predicted side effects.
 - **Cyclosporine**: 26 predicted side effects.
+  
 ![image](https://github.com/user-attachments/assets/1c000ebf-d80d-4161-8a50-1c1c47d4a780)
 
 ### Visualization
